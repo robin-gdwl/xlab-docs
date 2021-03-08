@@ -1,4 +1,4 @@
-name: Check markdown links for modified files
+name: 🔗🔗🔗 Check markdown links for modified files
 # on: [pull_request]
 on: push
 jobs:
@@ -6,15 +6,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - name: reviewdog
-      uses: gaurav-nelson/github-action-markdown-link-check@v1
+    - name: 🐶Reviewdog
+      uses: gaurav-nelson/github-action-markdown-link-check@1.0.12
       with:
         use-quiet-mode: 'yes'
         use-verbose-mode: 'yes'
         folder-path: 'docs'
         base-branch: 'main'
   markdownlint:
-    name: runner / markdownlint
+    name: 🏃 Runner / markdownlint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
