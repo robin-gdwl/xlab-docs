@@ -6,13 +6,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - uses: gaurav-nelson/github-action-markdown-link-check@v1
+    - name: reviewdog
+      uses: gaurav-nelson/github-action-markdown-link-check@v1
       with:
         use-quiet-mode: 'yes'
         use-verbose-mode: 'yes'
         folder-path: 'docs'
         base-branch: 'main'
-        name: reviewdog
   markdownlint:
     name: runner / markdownlint
     runs-on: ubuntu-latest
